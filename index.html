@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yokinachia - Nachia JKT48 Fanbase</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary: #ff69b4;
+            --secondary: #fce4ec;
+            --accent: #ff1493;
+            --dark: #2d3436;
+            --light: #fff5f8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
+
+        /* Navbar */
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .logo-container { display: flex; align-items: center; gap: 10px; }
+        .logo-container img { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--primary); }
+        nav .nav-links { display: flex; gap: 25px; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        nav a:hover { color: var(--primary); }
+
+        /* Sections */
+        section { padding: 100px 8%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+
+        /* Beranda */
+        #beranda {
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('media yang dibutuhkan/nachia1openpage.jpg');
+            background-size: cover; background-position: center; text-align: center;
+        }
+        .hero-content h1 { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--accent); margin-bottom: 10px; }
+        .video-box {
+            max-width: 800px; margin: 30px auto 0; border-radius: 20px; overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2); background: #000;
+        }
+
+        /* Donasi */
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: var(--accent); }
+        .donasi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .payment-info { background: white; padding: 30px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0; }
+        .method-card { background: var(--secondary); padding: 15px; border-radius: 12px; text-align: center; font-weight: bold; font-size: 0.8rem; }
+        
+        .form-box { background: white; padding: 30px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        form { display: flex; flex-direction: column; gap: 15px; }
+        input { padding: 12px; border-radius: 10px; border: 1px solid #eee; background: #f9f9f9; outline: none; }
+        button { padding: 15px; background: var(--accent); color: white; border: none; border-radius: 10px; font-weight: 700; cursor: pointer; transition: 0.3s; }
+        button:hover { background: var(--dark); transform: translateY(-3px); }
+
+        /* Biodata */
+        .bio-card {
+            display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px;
+            background: white; padding: 40px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .bio-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .bio-gallery img { width: 100%; border-radius: 15px; transition: 0.3s; }
+        .bio-gallery img:hover { transform: scale(1.05); }
+        
+        .bio-list { list-style: none; margin: 20px 0; }
+        .bio-list li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; }
+        .bio-list b { color: var(--accent); }
+
+        .social-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+        .social-links a { 
+            padding: 8px 15px; border-radius: 20px; text-decoration: none; 
+            color: white; font-size: 0.8rem; font-weight: 600; transition: 0.3s;
+        }
+        .ig { background: #E1306C; } .tw { background: #1DA1F2; } .tt { background: #000; }
+        .sr { background: #23d2e2; } .idn { background: #e02c2c; }
+
+        @media (max-width: 768px) {
+            .bio-card { grid-template-columns: 1fr; padding: 20px; }
+            section { padding: 80px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="media yang dibutuhkan/logofanbase.jpg" alt="Logo">
+            <span style="font-weight: 800; color: var(--accent); letter-spacing: 1px;">YOKINACHIA</span>
+        </div>
+        <div class="nav-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#donasi">Donasi</a>
+            <a href="#biodata">Biodata</a>
+        </div>
+    </nav>
+
+    <section id="beranda">
+        <div class="hero-content">
+            <p style="font-weight: 600; letter-spacing: 2px; color: var(--accent);">OFFICIAL FANBASE</p>
+            <h1>NINA TUTACHIA</h1>
+            <p>JKT48 12th Generation Member</p>
+            <div class="video-box">
+                <video width="100%" controls autoplay muted loop>
+                    <source src="media yang dibutuhkan/video.mp4" type="video/mp4">
+                    Browser anda tidak mendukung video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="donasi" style="background: #fff;">
+        <h2 class="section-title">Support Project</h2>
+        <div class="donasi-grid">
+            <div class="payment-info">
+                <img src="media yang dibutuhkan/nachiadonasi.jpg" alt="Donasi" style="width: 100%; border-radius: 15px; margin-bottom: 20px;">
+                <h3>DANA: 082261195070</h3>
+                <div class="method-grid">
+                    <div class="method-card">BRI<br>Slot Kosong</div>
+                    <div class="method-card">MANDIRI<br>Slot Kosong</div>
+                    <div class="method-card">BNI<br>Slot Kosong</div>
+                    <div class="method-card">QR CODE<br>Slot Kosong</div>
+                </div>
+                <div style="background: var(--light); padding: 15px; border-radius: 12px;">
+                    <h4 style="font-size: 0.9rem; margin-bottom: 10px;">🏆 Donatur Tertinggi (Leaderboard)</h4>
+                    <p style="font-size: 0.8rem; color: #888;">Belum ada data donatur.</p>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <h3>Konfirmasi Donasi</h3>
+                <p style="font-size: 0.8rem; color: #666; margin-bottom: 20px;">Silahkan isi form di bawah ini setelah melakukan transfer.</p>
+                <form id="donationForm">
+                    <input type="text" id="nama" placeholder="Nama Lengkap / Nickname" required>
+                    <input type="number" id="nominal" placeholder="Jumlah Donasi (Rp)" required>
+                    <input type="text" placeholder="Pesan untuk Nachia">
+                    <button type="submit">Kirim Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="biodata">
+        <h2 class="section-title">Member Profile</h2>
+        <div class="bio-card">
+            <div class="bio-gallery">
+                <img src="media yang dibutuhkan/nachia2.jpg" alt="Nachia">
+                <img src="media yang dibutuhkan/nachia3.jpg" alt="Nachia">
+                <img src="media yang dibutuhkan/nachia4.jpg" alt="Nachia">
+                <img src="media yang dibutuhkan/logofanbase.jpg" alt="Nachia">
+            </div>
+            <div class="bio-info">
+                <h2 style="color: var(--accent);">Nina Tutachia Browning Chapman</h2>
+                <p style="font-style: italic; font-size: 0.9rem; margin-bottom: 20px; color: #666;">"Si panda unyu yang selalu ceria! Aku Nachia, bikin kamu bahagia!"</p>
+                
+                <ul class="bio-list">
+                    <li><span><b>Nama Panggung</b></span> <span>Nachia</span></li>
+                    <li><span><b>Lahir</b></span> <span>16 Oktober 2009</span></li>
+                    <li><span><b>Asal</b></span> <span>Bali</span></li>
+                    <li><span><b>Horoskop</b></span> <span>Libra</span></li>
+                    <li><span><b>Tinggi</b></span> <span>162cm</span></li>
+                    <li><span><b>Gol. Darah</b></span> <span>O</span></li>
+                    <li><span><b>Status</b></span> <span>Member Gen 12 JKT48</span></li>
+                </ul>
+
+                <h4>Media Sosial:</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/jkt48.nachia.t" class="ig" target="_blank">Instagram</a>
+                    <a href="https://www.threads.com/@jkt48.nachia.t" class="tt" target="_blank">Threads</a>
+                    <a href="https://x.com/Nachia_JKT48" class="tw" target="_blank">Twitter</a>
+                    <a href="https://www.tiktok.com/@jkt48.nachia" class="tt" target="_blank">TikTok</a>
+                    <a href="https://www.showroom-live.com/r/JKT48_Nachia" class="sr" target="_blank">Showroom</a>
+                    <a href="https://idn-app.idn.link/s/profile-7cj09t" class="idn" target="_blank">IDN Live</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; background: var(--dark); color: white; font-size: 0.8rem;">
+        <p>&copy; 2026 YOKINACHIA. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('donationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            alert('Terima kasih ' + nama + ' telah berdonasi untuk Nachia! Pesan kamu akan segera kami proses.');
+            this.reset();
+        });
+    </script>
+</body>
+                      </html>
+
